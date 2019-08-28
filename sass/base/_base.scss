@@ -1,0 +1,7 @@
+*{
+    @extend %reset;
+    
+    &::before, &::after{
+        @extend %reset;
+    } 
+}

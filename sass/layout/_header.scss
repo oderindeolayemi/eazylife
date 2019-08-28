@@ -1,0 +1,59 @@
+.header{
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .7)),
+    url('../images/home.jpg');
+    position: relative;
+
+    &__logo{
+        height: 6.5rem;
+
+        &--box{
+            position: absolute;
+            top: 2rem;
+            left: 4rem;
+        }
+    }
+
+    &__menu{
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+
+        .navigation{
+            list-style: none;
+            
+            li{
+                display: inline-block;
+                transition: all .15s;
+
+                &:not(:last-child){
+                    margin-right: 6rem;
+
+                    &:hover{
+                        padding-bottom: .25rem;
+                        border-bottom: 1.5px solid white;
+                    }
+                }
+
+                .aff-btn{
+                    padding: 1rem 2.5rem;
+                    background-color: #5d10de;
+                    border-radius: 2rem;
+
+                    &:hover{
+                        background-color: darken(#5d10de, 20%);
+                    }
+                }
+            }
+        }
+    }
+
+    // &__grid{
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+}
